@@ -5,18 +5,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
+.landing-background{
+  background-image: url("../images.landing.jpg");
+  max-width: 100%;
+  height: auto;
 
-.landing-background {
-  background: url("../images/landing.jpg");
-  width: 100%;
-  height:auto
 }
+
 .card {
   display: grid;
-  grid-template-columns: 300px;
+  /* grid-template-columns: 300px; */
   grid-template-rows: 390px 110px;
   grid-template-areas: "image" "stats";
 
@@ -30,6 +30,7 @@ body {
   transition: 0.5s ease;
   cursor: pointer;
   margin:30px;
+  overflow: hidden;
 }
 .card-image {
   grid-area: image;
